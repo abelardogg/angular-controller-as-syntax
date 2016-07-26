@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Controller as syntax</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="app/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="app/module/appModule.js"></script>
+    <script src="app/module/appRouter.js"></script>
+  </head>
+  <body ng-app="mainApp">
+  <nav class="simpleNavBar">
+    <ul>
+      <li><a class="active" ui-sref="home">Home</a></li>
+      <li><a class="" ui-sref="about">About</a></li>
+    </ul>
+  </nav>
+    <div ui-view></div>
+  </body>
+
+</html>
